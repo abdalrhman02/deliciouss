@@ -1,0 +1,18 @@
+
+
+.mainBtn {
+    background-color:var(--main-color);
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 30px;
+    width: 13em;
+    height: 3.3em;
+}
+.mainBtn:hover {
+    cursor: pointer;
+    opacity: .9
+}

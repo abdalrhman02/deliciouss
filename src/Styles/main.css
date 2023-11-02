@@ -1,0 +1,332 @@
+/* Header */
+.header {
+    color: #fff
+}
+.header .container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .container .logo {
+
+}
+.header .container .logo h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.header .container ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.header .container ul li {
+    margin-right: 25px;
+    font-weight: 500;
+}
+
+
+
+/* Landing */
+.landing {
+    margin: 1em 0 3em 0;
+}
+.landing::before {
+    content: '';
+    background-image: url(../../public/images/landingBackground.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+.landing::after {
+    content:'';
+    background-color: var(--second-color);
+    opacity: .9;
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1
+}
+
+.landing .container {
+    display: flex;
+    align-items: center;
+}
+
+.landing .container .info {color: #fff}
+.landing .container .info h1 {font-size: 5em;}
+.landing .container .info p {
+    font-weight: 500;
+    margin: 20px 0 30px 
+}
+
+.landing .container .imgContainer {}
+.landing .container .imgContainer img {width: 35em}
+
+
+
+/* About */
+.about {
+
+}
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2.5em 0;
+}
+
+.about .container .text {
+
+}
+.about .container .text p {
+    max-width: 650px;
+    margin: 20px 0 10px
+}
+.about .container .text button {
+    width: 9em;
+    height: 2.6em;
+}
+.about .container .imageContainer {
+    
+}
+.about .container .imageContainer img {
+    width: 12em
+}
+
+
+/* Home Shop Section */
+
+.ShopSection {
+    color: #fff;
+    position: relative;
+}
+.ShopSection::before {
+    content: '';
+    background-image: url(../../public/images/landingBackground.png);
+    background-size: cover;
+    width: 100%;
+    height: 140vh;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+.ShopSection::after {
+    content:'';
+    background-color: #542209;
+    opacity: .93;
+    width:100%;
+    height:140vh;
+    position: absolute;
+    top: 0;
+    z-index: -1
+}
+
+
+.ShopSection .container {
+    padding: 4em 0;
+    text-align: center;
+}
+
+.ShopSection .container .title {
+    font-size: 3.5em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    margin-bottom: 25px
+}
+.ShopSection .container .title::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    width: 4em;
+    height: 5px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+}
+.ShopSection .container .title p {
+    margin-top: 20px
+}
+
+
+.ShopSection .container .productsImages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3em;
+}
+.ShopSection .container .productsImages .productImg {
+    padding: 0.5em;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 14em;
+    height: 14em;
+    position: relative;
+    margin-right: 20px
+}
+.ShopSection .container .productsImages .productImg img {
+    width: 13em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5s
+}
+.ShopSection .container .productsImages .productImg img:hover {
+    cursor: pointer;
+    transform: translate(-50%,-50%) scale(1.05)
+}
+
+.ShopSection button {
+    font-weight: 500;
+    font-size: 16px;
+    width: 11em;
+    height: 2.5em;
+    margin-top: 3em
+}
+
+
+
+/* Footer */
+footer {
+    color: #fff;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 2em;
+    padding: 3em 0;
+}
+
+footer .container .Fabout {
+
+}
+footer .container div h3 {
+    font-size: 2em;
+    margin-bottom: 15px
+}
+footer .container div p {
+    line-height: 1.4em;
+}
+footer .container .Fabout ul {
+    display: flex;
+}
+footer .container .Fabout ul li {
+    background-color: #fff;
+    color: #000;
+    padding: 7px;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    margin-top: 20px;
+    transition: 0.5s
+}
+footer .container .Fabout ul li:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+}
+footer .container .Fabout ul li i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+footer .container .address ul,
+footer .container .links ul {
+    line-height: 2em;
+    font-size: 18px
+}
+
+
+footer .container .newsletter {
+
+}
+footer .container .newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+footer .container .newsletter form input,
+footer .container .newsletter form [type="submit"] {
+    padding: 6px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    height: 2em;
+    width: 17em;
+    font-size: 14px;
+}
+footer .container .newsletter form input {
+    margin: 8px 0
+}
+footer .container .newsletter form [type="submit"] {
+    height: 2.5em;
+    font-size: 16px;
+    width: 15.6em
+}
+
+
+
+
+/* Contact Page */
+.contact {
+    padding: 3.5em 0;
+    text-align: center;
+}
+
+.contact .container {
+
+}
+
+.contact .container .title {
+
+}
+.contact .container .title h2 {
+    margin-bottom: 12px
+}
+.contact .container .title h2::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3em;
+}
+.contact .container .title p {
+    font-size: 18px
+}
+
+.contact .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+} 
+.contact .container form input {
+    width: 45%;
+    height: 3.5em;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 0 10px;
+    margin-bottom: 17px;
+    font-size: 16px;
+}
+.contact .container form .mainBtn {
+
+}
